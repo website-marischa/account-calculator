@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Inspiration&family=Marcellus&display=swap');
+body {
+    background-image: url("https://images.unsplash.com/photo-1600628421066-f6bda6a7b976?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fGZvb2QlMjBmcmllbmRzfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#container {
+    background-color:rgba(137, 129, 129, 0.847);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 40%;
+    /*height:auto;*/
+    border-radius: 10px;
+    border: thick double #9f4747;
+    color: white;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+h1 {
+    font-family: 'Inspiration', cursive;
+    font-size: 70px;
+    font-weight: lighter;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    align-self: center;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Marcellus', serif;
+    margin: 10px;
+    padding: 10px;
+}
+input {
+    font-family: 'Marcellus', serif;
+    padding: 5px;
+    border-radius: 10px;
+    border: none;
+}
+#addTip {
+    background-color:#78DEC7;
+    border: none;
+    border-radius: 10px;
+    padding: 5px;
+    font-family: 'Inspiration', cursive;
+    font-size: 25px;
+}
+#btn {
+    background-color: #F7DBF0;
+    padding: 5px;
+    border-radius: 10px;
+    border: none;
+    margin-top: 10px;
+    font-family: 'Inspiration', cursive;
+    font-size: 25px;
+}
+#tip{
+    border-radius: 10px;
+    margin: 5px;
+    font-family: 'Marcellus', serif;
+    border: none;
+    display: none;
+    font-size: 15px;
+}
+#showTotal{
+    display:flex;
+    justify-content: space-around;
+}
+#billSplit, #totalTip, #totalAmount {
+    font-family: 'Marcellus', serif;
+    background-color: #469885;
+    margin: 15px;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    font-size: 20px;
+    width: 100px;
+
+}
+@media all and (max-width: 1200px){
+    #container{
+        width: 50%;
+    }
+    button {
+        font-size: 20px;
+        width: auto;
+    }
+    #billSplit, #totalTip, #totalAmount {
+        font-size: 15px;
+        width: auto;
+    }
+  
+}
+
+
+@media all and (max-width: 800px){
+    #container{
+        width: 50%;
+    }
+    button {
+        font-size: 20px;
+        width: auto;
+    }
+    #billSplit, #totalTip, #totalAmount {
+        font-size: 15px;
+    }
+  
+}
+
+@media all and (max-width: 480px){
+    h1 {
+        font-size: 60px;
+        margin: 10px;
+    }
+    #container{
+        width: auto;
+        padding: 25px;
+        margin-left: 0;
+        padding: 0px;
+    }
+    #billSplit, #totalTip, #totalAmount {
+        margin: 10px;
+        padding: 5px;
+
+    }
+}
